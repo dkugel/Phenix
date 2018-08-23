@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
 }
 .logo{
-	max-width: 150px;
+	max-width: 250px;
 	padding-bottom: 10px;}
 p{
 	margin:0;
@@ -1382,6 +1382,11 @@ ol {
 /*-- gallery --*/
 .all_pad{
 	padding:6em 0;
+}
+.medium_pad{
+	padding:3em 0;
+	color: #464646;
+	line-height: 2em;
 }
 .gallery-grids-left-sub,.gallery-grid-sub{
 	margin:2em 0 0;
