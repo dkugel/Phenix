@@ -85,6 +85,15 @@ label{
     -moz-background-size: cover;
     min-height: 715px;	
 }
+.banner_w3ls_sub{
+    background: url(../images/p1-sub.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    min-height: 715px;	
+}
 /*-- logo --*/
 .navbar-header h1 a {
     color: #00afef;
