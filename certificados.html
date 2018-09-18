@@ -115,12 +115,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<li><a class="fb-icon4" href="#"></a></li>
 			<li><a class="fb-icon5" href="#"></a></li>
 		</ul>
-		<form action="#" method="post">
-			<input type="text" value="Name" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}">
-			<input type="email" value="Email" name="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-			<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Mensaje</textarea>
+		<form action="enviar.php" method="post">
+			<input type="text" value="Nombre" name="name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}"><br>
+			<input type="text" value="Telefono" name="phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Telefono';}">
+			<input type="email" value="Email" name="email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
+			<textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}" required="">Mensaje</textarea>
 			<div class="con-form text-center">
-				<input type="submit" value="Enviar">
+				<input type="submit" name="submit" value="Enviar">
 			</div>
 		</form>
 		<p class="agileinfo">&copy; 2017 Clinical Lab . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>

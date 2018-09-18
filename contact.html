@@ -55,11 +55,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- top-nav -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">Nosotros</a></li>
 					<li><a href="services.html">Servicios</a></li>
 					<li><a href="certificados.html">Descarga de certificados</a></li>
-					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="contact.html" class="active">Contacto</a></li>
 				</ul>	
 				<div class="clearfix"> </div>	
 			</div>
@@ -82,21 +82,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="contact-grid1 agileits-w3layouts">
 						<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
 						<h4>Dirección</h4>
-						<p>12K Street, 45 Building Road <span>New York City.</span></p>
+						<p>Calle 85 No. 49A-40 Piso 2 <span>Bogotá.</span><span>&nbsp;</span></p>
 					</div>
 				</div>
 				<div class="col-md-4 contact-grid agileits text-center animated wow slideInUp" data-wow-delay=".5s">
 					<div class="contact-grid2 w3">
 						<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
-						<h4>Llémenos</h4>
-						<p>+1234 567 890<span>+1234 567 890</span></p>
+						<h4>Llámanos</h4>
+						<p>+571 5335016<span>+571 4599766</span><span>+57 3212910220</span></p>
 					</div>
 				</div>
 				<div class="col-md-4 contact-grid w3 text-center animated wow slideInRight" data-wow-delay=".5s">
 					<div class="contact-grid3 w3l">
 						<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
 						<h4>Email</h4>
-						<p><a href="mailto:info@example.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+						<p><a href="mailto:servicioalcliente@phenixsaludocupacional.com.co">servicioalcliente@phenixsaludocupacional.com.co</a><span><a href="mailto:gerenciageneral@phenixsaludocupacional.com.co">gerenciageneral@phenixsaludocupacional.com.co</a></span><span>&nbsp;</span></p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -115,12 +115,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<li><a class="fb-icon4" href="#"></a></li>
 			<li><a class="fb-icon5" href="#"></a></li>
 		</ul>
-		<form action="#" method="post">
-			<input type="text" value="Name" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}">
-			<input type="email" value="Email" name="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-			<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Mensaje</textarea>
+		<form action="enviar.php" method="post">
+			<input type="text" value="Nombre" name="name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}"><br>
+			<input type="text" value="Telefono" name="phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Telefono';}">
+			<input type="email" value="Email" name="email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
+			<textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}" required="">Mensaje</textarea>
 			<div class="con-form text-center">
-				<input type="submit" value="Enviar">
+				<input type="submit" name="submit" value="Enviar">
 			</div>
 		</form>
 		<p class="agileinfo">&copy; 2017 Clinical Lab . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>

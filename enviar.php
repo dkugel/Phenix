@@ -99,13 +99,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li>
 					<div class="banner-info w3">
 						<div class="banner-text w3l">
-							<h3>Medicina del trabajo</h3>
-							<p>Evaluaciones médicas ocupacionales de ingreso,
-								 periódicos y de retiro con énfasis osteomuscular y 
-								 Evaluaciones Medico Ocupacional con enfasis en Trabajo en Alturas.  
-								 Programas especializados en el diseño, implementación y seguimiento 
-								 de programas y actividades de seguridad y salud en el trabajo, higiene, 
-								 seguridad industrial y riesgos laborales.</p>
+							<h3>Medicina laboral o del trabajo</h3>
+							<p>Realizamos los exámenes médicos ocupacionales, exámenes de ingreso y control
+							para mantener la salud de los trabajadores.
+       <?php        
+         $name = isset($_POST['name'])? $_POST['name'] : NULL;
+         $email = isset($_POST['email'])? $_POST['email'] : NULL;
+         $phone = isset($_POST['phone'])? $_POST['phone'] : NULL;
+         $message = isset($_POST['message'])? $_POST['message'] : NULL;
+        
+         $para = 'servicioalcliente@phenixsaludocupacional.com.co';
+         $titulo = 'Nuevo contacto';
+         $header = 'From: ' . $email;
+         $msjCorreo = "Nombre: $name\n E-Mail: $email\n  Telefono: $phone\n   Mensaje:\n $message";
+           
+         if (isset($_POST['submit'])) {
+         if (mail($para, $titulo, $msjCorreo, $header)) {
+         echo "<script language='javascript'>
+         alert('Mensaje enviado, muchas gracias.');
+         window.location.href = 'http://www.phenixsaludocupacional.com.co';
+         </script>";
+         } else {
+         echo 'Falló el envio';
+         }
+         }
+        ?>	
+       </p>
 						</div>
 					</div>
 				</li>
@@ -174,9 +193,7 @@ trabajadores, colaborando de esta forma con el mejoramiento y productividad de n
 				<span><img src="images/icon1.png" alt=" "/></span>
 				<h4>Medicina en salud ocupacional </h4>
 				<div class="multi-gd-text"><a href="#"><img class="img-responsive" src="images/p5.jpg" alt=" "/></a></div>
-				<p>Nuestro portafolio cuenta con una amplia gama de productos y servicios, que tienen el respaldo de profesionales 
-					especializados e idóneos con experiencia en cada uno de los campos que comprende la Salud Ocupacional y la protección 
-					del medio ambiente, garantizándole a su empresa la ejecución ética e imparcial de todas las evaluaciones de sus empleados.</p>
+				<p>Realizamos los exámenes médicos ocupacionales de ingreso periódicos y de retiro.</p>
 			</div>
 			<div class="col-md-4 list-left text-center wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
 				<span><img src="images/icon2.png" alt=" "/></span>
@@ -266,13 +283,13 @@ servicios oportunos y confiables, haciéndonos competitivos en el mercado.</p>
 			<li><a class="fb-icon4" href="#"></a></li>
 			<li><a class="fb-icon5" href="#"></a></li>
 		</ul>
-		<form action="enviar.php" method="post">
-			<input type="text" value="Nombre" name="name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}"><br>
-			<input type="text" value="Telefono" name="phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Telefono';}">
-			<input type="email" value="Email" name="email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-			<textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}" required="">Mensaje</textarea>
+		<form action="#" method="post">
+			<input type="text" value="Nombre" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}"><br>
+			<input type="text" value="Telefono" name="Phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Telefono';}">
+			<input type="email" value="Email" name="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
+			<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}" required="">Mensaje</textarea>
 			<div class="con-form text-center">
-				<input type="submit" name="submit" value="Enviar">
+				<input type="submit" value="Enviar">
 			</div>
 		</form>
 		<p class="agileinfo">&copy; 2017 Clinical Lab . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>

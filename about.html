@@ -90,17 +90,58 @@ Resolución 1918 de 2009, Resolución 3673 de 2008, Ley 1562 de 2012).</p>
 	<div class="container">
 		
 		<div class="services-grids w3layouts">
-			<div class="col-md-6 ser-right-page">
-				<div class="port-2 effect-3">
-                	<div class="image-box w3">
-                    	<img src="images/a1.jpg" alt=" "/>
-                    </div>
+			<div class="col-md-6 ser-right-page">				
+                	<div id="slideshow">
+						<div>
+						  <img src="images/1s.png">
+						</div>
+						<div>
+							<br>
+							Exámenes Médicos Ocupacionales de Ingreso y de Retiro.
+					 	</div>
+						<div>
+						  <img src="images/2s.png">
+						</div>
+						<div>
+							<br>
+							Instalaciones óptimas e idóneas.
+					 	</div>
+						<div>
+						  <img src="images/3s.png">
+						</div>
+						<div>
+							<br>
+							Las mejores locaciones.
+						</div>
+						<div>
+							<img src="images/4s.png">
+						</div>
+						<div>
+							<br>
+							Audiometría - Fonoaudiología
+						</div>
+					</div>
                     <div class="text-desc">
                     	<h4>Medicina laboral y/o del trabajo</h4>
                         <p>Medicina preventiva, buscamos mantener la salud de los trabajadores.</p>
-                    </div>
-                </div>
+                    </div>                
+				<br>
+				<div class="services-right agileits">
+					<div class="services-left w3ls">
+						<p></p>
+					</div> <br>
+					<h4>&nbsp Valores corporativos</h4> <br>
+					<ul>
+						<li>Honestidad.</li>
+						<li>Responsabilidad.</li>
+						<li>Ética.</li>
+						<li>Talento humano de alta calidad.</li>
+						<li>Experiencia.</li>
+						<li>Cumplimiento.</li>						
+					</ul>
+				</div>
 			</div>
+			
 			<div class="col-md-6 ser-left-page">
 				<div class="services-grid w3l">
 					<div class="services-left w3ls">
@@ -150,12 +191,13 @@ Resolución 1918 de 2009, Resolución 3673 de 2008, Ley 1562 de 2012).</p>
 			<li><a class="fb-icon4" href="#"></a></li>
 			<li><a class="fb-icon5" href="#"></a></li>
 		</ul>
-		<form action="#" method="post">
-			<input type="text" value="Name" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}">
-			<input type="email" value="Email" name="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-			<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Mensaje</textarea>
+		<form action="enviar.php" method="post">
+			<input type="text" value="Nombre" name="name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nombre';}"><br>
+			<input type="text" value="Telefono" name="phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Telefono';}">
+			<input type="email" value="Email" name="email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
+			<textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}" required="">Mensaje</textarea>
 			<div class="con-form text-center">
-				<input type="submit" value="Enviar">
+				<input type="submit" name="submit" value="Enviar">
 			</div>
 		</form>
 		<p class="agileinfo">&copy; 2017 Clinical Lab . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
@@ -178,5 +220,17 @@ Resolución 1918 de 2009, Resolución 3673 de 2008, Ley 1562 de 2012).</p>
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- //smooth scrolling -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+	$("#slideshow > div:gt(0)").hide();	
+	setInterval(function() { 
+	  $('#slideshow > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#slideshow');
+	},  3000);
+</script>
 </body>
 </html>

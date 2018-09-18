@@ -1467,11 +1467,11 @@ ol {
 }
 .services-left{
 	float:left;
-	width: 12.5%;
+	width: 7.5%;
 }
 .services-right{
 	float:right;
-	width: 80%;
+	width: 90%;
 }
 .services-left p{
   background: #00afef;
@@ -3231,5 +3231,22 @@ line-height:2.2em;
 		left: 17.5%;
 	}
 	
+}
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 340px; 
+    height: 340px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div {
+				font-family: 'Lato',sans-serif;
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
 }
 /*-- //responsive media queries --*/
